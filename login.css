@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    --background-color1: #364156;
+    --background-color2: #011638;
+    box-sizing: border-box;
+}
+
+html,body{
+    margin: 0px;
+    background: linear-gradient(180deg, var(--background-color1) , var(--background-color2)) ;
+    min-width: 300px;
+    min-height: 250px;
+}
+
+.container {
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card   {
+    border: 0;
+    border-radius: 30px;
+    background-color: rgb(228,226,226);
+    min-width: 300px;
+    min-height: 250px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 50px 0;
+}
+
+h1 {
+    color: var(--background-color2);
+    font-size: 25px;
+}
+
+.textInput {
+    border: 0;
+    border-bottom: 2px solid var(--background-color1);;
+    margin: 10px 0 20px 0;
+    width: 60%;
+    background-color: transparent;
+    font-size: 18px;
+    color: rgb(118, 110, 110);
+    font: inherit;
+}
+
+.textInput:focus,
+.textInput:valid {
+    outline: none;
+    font: inherit;
+    color: var(--background-color2);
+}
+
+.btnSignIn {
+    background-color:var(--background-color1);
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px 2px #a8a9ab;
+    font: inherit;
+    font-size: 16px;
+    color: #fff;
+    width: 60%;
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btnSignIn:hover {
+    background-color: var(--background-color2);
+}
+
+.btnSignIn:active {
+    transform: scale(0.98);
+}

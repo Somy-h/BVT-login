@@ -1,79 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 * {
-    --background-color1: #364156;
-    --background-color2: #011638;
+    --background-color : #f0f0f0;
     box-sizing: border-box;
 }
 
 html,body{
     margin: 0px;
-    background: linear-gradient(180deg, var(--background-color1) , var(--background-color2)) ;
-    min-width: 300px;
-    min-height: 250px;
+    background-color: var(--background-color);
+    overflow: hidden;
+}
+
+h1 {
+    color: black;
+    font-size: 22px;
 }
 
 .container {
-    font-family: 'Poppins', sans-serif;
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .card   {
-    border: 0;
+    border-style: none;
     border-radius: 30px;
-    background-color: rgb(228,226,226);
-    min-width: 300px;
-    min-height: 250px;
-    width: 350px;
+    background-color: #fff;
+    min-width: 380px;
+    min-height: 310px;
+    width: 30%;
+    height: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0 50px 0;
-}
-
-h1 {
-    color: var(--background-color2);
-    font-size: 25px;
+    padding: 30px 80px 50px 80px; 
+    box-shadow: 0px 0px 10px 2px #e7e6e6;
 }
 
 .textInput {
     border: 0;
-    border-bottom: 2px solid var(--background-color1);;
-    margin: 10px 0 20px 0;
-    width: 60%;
+    border-bottom: 1px solid rgb(204, 201, 201);
     background-color: transparent;
-    font-size: 18px;
-    color: rgb(118, 110, 110);
+    width: 100%;
+    margin: 10px 0 20px 0;
     font: inherit;
+    font-size: 14px;
 }
 
-.textInput:focus,
-.textInput:valid {
+.textInput:focus {
     outline: none;
     font: inherit;
-    color: var(--background-color2);
+    color: black;
 }
 
 .btnSignIn {
-    background-color:var(--background-color1);
+    background-color: #0290c4;
+    width: 100%;
     border: 0;
     border-radius: 20px;
-    box-shadow: 1px 2px 3px 2px #a8a9ab;
+    box-shadow: 0px 2px 3px 1px #bcbcbd;
+    cursor: pointer;
     font: inherit;
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
-    width: 60%;
     margin-top: 20px;
     padding: 10px;
-    cursor: pointer;
+}
+
+.btnSignIn:focus {
+    outline: none; 
 }
 
 .btnSignIn:hover {
-    background-color: var(--background-color2);
+    background-color: #1e9ecc;
 }
 
 .btnSignIn:active {

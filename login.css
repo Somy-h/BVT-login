@@ -8,7 +8,6 @@
 html,body{
     margin: 0px;
     background-color: var(--background-color);
-    overflow: hidden;
 }
 
 h1 {
@@ -52,7 +51,6 @@ h1 {
 
 .textInput:focus {
     outline: none;
-    font: inherit;
     color: black;
 }
 

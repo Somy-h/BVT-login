@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 * {
-    --background-color : #f0f0f0;
     box-sizing: border-box;
 }
 
 html,body{
+    background-color: #f0f0f0;
     margin: 0px;
-    background-color: var(--background-color);
 }
 
 h1 {
@@ -16,56 +15,56 @@ h1 {
 }
 
 .container {
-    width: 100vw;
+    font-family: 'Poppins', sans-serif;
     height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
 }
 
 .card   {
+    background-color: #fff;
     border-style: none;
     border-radius: 30px;
-    background-color: #fff;
+    box-shadow: 0px 0px 10px 2px #e7e6e6;
+    padding: 30px 80px 50px 80px; 
     min-width: 380px;
     min-height: 310px;
-    width: 30%;
     height: 20%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 80px 50px 80px; 
-    box-shadow: 0px 0px 10px 2px #e7e6e6;
 }
 
 .textInput {
+    background-color: transparent;
     border: 0;
     border-bottom: 1px solid rgb(204, 201, 201);
-    background-color: transparent;
-    width: 100%;
-    margin: 10px 0 20px 0;
     font: inherit;
     font-size: 14px;
+    width: 100%;
+    margin: 10px 0 20px 0;
 }
 
 .textInput:focus {
-    outline: none;
     color: black;
+    outline: none;
 }
 
 .btnSignIn {
     background-color: #0290c4;
-    width: 100%;
     border: 0;
     border-radius: 20px;
     box-shadow: 0px 2px 3px 1px #bcbcbd;
+    color: #fff;
     cursor: pointer;
     font: inherit;
     font-size: 14px;
-    color: #fff;
     margin-top: 20px;
     padding: 10px;
+    width: 100%;
 }
 
 .btnSignIn:focus {
@@ -78,4 +77,10 @@ h1 {
 
 .btnSignIn:active {
     transform: scale(0.98);
+}
+
+@media (min-width: 1200px) {
+    .card   {
+        width: 400px;
+    }
 }
